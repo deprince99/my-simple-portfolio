@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+      background:whitesmoke;
+
+    }
+    .box {
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px;
+        width: 1000px;
+        margin: 20px auto;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1.5rem 30rem;
+      position: fixed;
+      width: 100%;
+      
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 0 35px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      color: #00adb5;
+    }
+
+    .Home{
+      height: 100vh;
+      background: linear-gradient(to right, #7f8285, #7b7f85);
+      color: #080707;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+    .Home h1 {
+      font-size: 3rem;
+    }
+    .Home p {
+      font-size: 1.2rem;
+    }
+    
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .Stack {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+      gap: 20px;
+    }
+    .Stack-card {
+      background: #7b7f85;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s;
+      color:#080707;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 800px;
+      margin: auto;
+    }
+    form input, form textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1.5px solid #130f0f;
+      border-radius: 5px;
+      color:#000000;
+    }
+    form button {
+      padding: 10px;
+      background: #7b7f85;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    form button:hover {
+      background: #333;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul> 
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Stack">Stack</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="Home" id="Home">
+    <h1>Hi, I'm Buliyaminu Abdqoyum Olamide</h1>
+    <p>A passionate and detail-oriented Web Developer with a strong foundation in building clean, responsive, and user-friendly websites. I enjoy transforming ideas into functional digital experiences using modern web technologies such as HTML, CSS, and JavaScript. With a keen eye for design and a problem-solving mindset</p>
+  </section>
+
+    <section id="Stack">
+        <h2>Stacks</h2>
+        <div class="Stack">
+        <div class="Stack-card">
+            <h3>HTML</h3>
+            <p>For proper structural and foundation of every webpages.</p>
+        </div>
+        <div class="Stack-card">
+            <h3>CSS</h3>
+            <p>For proper styling and design of webpages.</p>
+        </div>
+        <div class="Stack-card">
+            <h3>JAVASCRIPT</h3>
+            <p>For proper interactivity and fucntionality.</p>
+        </div>
+        </div>
+    </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Buliyaminu Abdqoyum Olamide. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
